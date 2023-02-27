@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css"> 
+    <link rel="icon" href="images/bulldog-logo.png"> 
+    <title>Concordia Esports - Contact</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <!-- Image and text -->
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="images/bulldog-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Concordia Esports - Contact
+                </a>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Games
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="overwatch.html">Overwatch</a></li>
+                    <li><a class="dropdown-item" href="rl.html">Rocket League</a></li>
+                    <li><a class="dropdown-item" href="valorant.html">Valorant</a></li>
+                    <li><a class="dropdown-item" href="lol.html">League of Legends</a></li>
+                    <li><a class="dropdown-item" href="ssb.html">Super Smash Bros.</a></li>
+                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact/Information</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header> 
+
+    <!-- BODY WITH ALL OF THE INFORMATION. -->
+
+    <div class="bodyheader">
+        <div class="bodyinnerheader">
+
+            <div class="person">
+                <div class="container-fluid">
+                    <h1 class="title"><b>Ryan Hinds: Head Coach.</b></h1>
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="personphoto" src="images/Ryan_Hinds.jpg" alt="Ryan Hinds">
+                        </div>
+                        <div class="col-8">
+                            <br>
+                            <p>Ryan Hinds is the first esports coach to be hired at Concordia University, Nebraska. Hinds graduated from Oklahoma Christian University in 2015 with a bachelor’s degree in mechanical engineering. He previously worked at Chief Agri in Kearney, Nebraska, as a design engineer. </p>
+                            <p>Before becoming Concordia's esports coach, Hinds and his wife, Amanda, started the esports team at Elm Creek High School, one of the first high school esports teams in Nebraska. He coached the Elm Creek team for three years while also helping create the Nebraska Schools eSport Association (NSeSA), a nonprofit organization that promotes esports in Nebraska high schools.</p>
+                            <p>Hinds was awarded the High School Coach of the Year by the National Association of Esport Coaches and Directors (NAECAD) in June of 2020. He was also elected the President of the NSeSA in 2019 and has served on their board of directors since 2018.</p>
+                            <br>
+                            <h5>Contact Information:</h5>
+                            <hr>
+                            <form style="display: inline" action="tel:402-643-7141" method="get">
+                                <button><img class="locationphoto" src="images/phone-art.png" alt="phone">Phone</button>
+                            </form>
+                            <form style="display: inline" action="mailto:ryan.hinds@cune.edu" method="get">
+                                <button><img class="locationphoto" src="images/email-art.jpg" alt="email">Email</button>
+                            </form>
+                            <button ><img class="locationphoto" src="images/location-clipart-location-sign-18.png" alt="location">Thom Leadership Education Center 003A</button>
+                            <button id="hide">Hide Contact Form</button>
+                            <button id="show">Show Contact Form</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="schedule">
+
+                <h2>Contact Form:</h2>
+                <p>If you are interested in playing esports at Concorida, please fill out the form and Ryan Hinds will reach out to you!</p>
+                <hr>
+                <form name="myForm" onsubmit="return validateForm()">
+                    <div>
+                        <h5>Whats your name?</h5>
+                        <label for="name">Full Name:</label>
+                        <input id="name" name="name" type="text"><br>
+                    </div>
+                    <br>
+                    <div>
+                        <h4>Whats todays date?</h4>
+                        <label for="date">Start date:</label>
+                        <input type="date" id="date" name="trip-start">
+                    </div>
+                    <br>
+                    <div>
+                        <h5>What is your Discord Username?</h5>
+                        <label for="discord">Discord:</label>
+                        <input id="discord" name="discord" type="text"><br>
+                    </div>
+                    <br>
+                    <div>
+                        <h5>What is your Email?</h5>
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="text"><br>
+                    </div>
+                    <br>
+                    <div>
+                        <h4>What grade are you in?</h4>
+                        <input type="radio" id="freshman" name="gradeLevel" value="freshman">
+                        <label for="freshman">Freshman</label><br>
+                        <input type="radio" id="sophomore" name="gradeLevel" value="sophomore">
+                        <label for="sophomore">Sophomore</label><br>
+                        <input type="radio" id="junior" name="gradeLevel" value="junior">
+                        <label for="junior">Junior</label><br>
+                        <input type="radio" id="senior" name="gradeLevel" value="senior">
+                        <label for="senior">Senior</label><br>
+                    </div>
+                    <br>
+                    <div>
+                        <h4>What game do you like to play?</h4>
+                        <input type="radio" id="overwatch2" name="game" value="overwatch2">
+                        <label for="overwatch2">Overwatch 2</label><br>
+                        <input type="radio" id="rocketleague" name="game" value="rocketleague">
+                        <label for="rocketleague">Rocket League</label><br>
+                        <input type="radio" id="valorant" name="game" value="valorant">
+                        <label for="valorant">Valorant</label><br>
+                        <input type="radio" id="lol" name="game" value="lol">
+                        <label for="lol">League of Legends</label><br>
+                        <input type="radio" id="ssb" name="game" value="ssb">
+                        <label for="ssb">Super Smash Bros</label><br>
+                    </div>
+                    <br>
+                    <div>
+                        <h5>What is your rank in said game?</h5>
+                        <label for="rank">Rank:</label>
+                        <input id="rank" name="rank" type="text"><br>
+                    </div>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="reset" id="reset">Reset</button>
+                </form> 
+
+                <br>
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
